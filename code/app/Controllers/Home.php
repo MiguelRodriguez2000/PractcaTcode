@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\mUsuarios;
+use App\Models\mFacturas;
 class Home extends BaseController
 {
     public function index()
@@ -21,11 +21,12 @@ class Home extends BaseController
     public function insertarForm(){
         $mFacturas = new mFacturas();
         $facturaNueva = [
-            "fecha" => $_POST['nombre'],
-            "descripcion" => $_POST['apellido'],
-            "cantidad" => $_POST['correo'],
-            "precio_u" => $_POST['rol'],
-            "total" => <?php $total = $_POST['cantidad'] * $_POST['precio_u']; echo $total; ?>
+            "fecha" => $_POST['fecha'],
+            "descripcion" => $_POST['descripcion'],
+            "cantidad" => $_POST['cantidad'],
+            "precio_u" => $_POST['precio_u'],
+            $total = $_POST['cantidad'] * $_POST['precio_u'],
+            "total" =>  $total
         ];
         $mFacturas->insert($facturaNueva);
         $datoId['id_factura'] = $mFacturas->

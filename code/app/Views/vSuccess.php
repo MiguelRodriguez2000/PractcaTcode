@@ -13,9 +13,9 @@
 </head>
 <body>
     <div class="container">
-        <h2>El usuario se registro con exito,
+        <h2>La factura se registro con exito,
             su identificador es el:
-                <?php echo$id_usuario; ?></h2>
+                <?php echo$id_factura; ?></h2>
                 hola
     </div>
     <footer>
