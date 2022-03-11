@@ -20,15 +20,18 @@
 				</tr>
 			</thead>
 			<tbody>
-				<?php foreach($usuarios as $usuario){?>
+				<?php foreach($facturas as $factura){?>
 				<tr>
-					 <td><?php echo $usuario['id_factura']; ?></td>
-					 <td><?php echo $usuario['fecha_compra']; ?></td>
-					 <td><?php echo $usuario['descripcion']; ?></td>
-					 <td><?php echo $usuario['cantidad']; ?></td>
-					 <td><?php echo $usuario['precio_u']; ?></td>
-					 <td><?php echo $usuario['total']; ?></td>
-					 <td><a type="button" href="<?php echo base_url(); ?>practica/PractcaTcode-main/code/public/Home/eliminarRegistro/<?php echo $usuario['id_factura']; ?>">Eliminar</a></td>
+					 <td><?php echo $factura['id_factura']; ?></td>
+					 <td><?php echo $factura['fecha_compra']; ?></td>
+					 <td><?php echo $factura['descripcion']; ?></td>
+					 <td><?php echo $factura['cantidad']; ?></td>
+					 <td><?php echo $factura['precio_u']; ?></td>
+					 <td><?php echo $factura['total']; ?></td>
+					 <td><a type="button" href="<?php echo base_url(); ?>/practica/PractcaTcode-main/code/public/Home/eliminarRegistro/
+					 <?php echo $usuario['id_factura']; ?>">Eliminar</a><a type="button" href="<?php echo base_url(); ?>
+					 /practica/PractcaTcode-main/code/public/Home/buscarRegistro/<?php echo $usuario['id_factura']; ?>">Editar</a>
+					</td>
 				</tr>
 				<?php }?>
 			</tbody>

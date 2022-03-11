@@ -16,11 +16,11 @@
 	<h1><center>Registro encontrado</center></h1>
 	<form method="POST" action="../Home/actualizarRegistro">
 		<div>	
-		<center>ID: <input required type="text" name="id_usuario" id="id_usuario" value="<?php echo $id_usuario; ?>" readonly></center>
+		<center>ID: <input required type="text" name="id_factura" id="id_factura" value="<?php echo $id_factura; ?>" readonly></center>
 		<br>
-		<center>Nombre: <input required type="text" name="nombre" id="nombre" value="<?php echo $nombre; ?>"></center>
+		<center>fecha: <input required type="date" name="fecha" id="fecha" value="<?php echo $fecha; ?>"></center>
 		<br>
-		<center>Apellido: <input required type="text" name="apellido" id="apellido" value="<?php echo $apellido; ?>"></center>
+		<center>Descripciòn del articulo: <input required type="text" name="descripcion" id="descripcion" value="<?php echo $descripcion; ?>"></center>
 		<br>
 		<center>Correo: <input required type="text" name="correo" id="correo" value="<?php echo $correo; ?>"></center>
 		<br>

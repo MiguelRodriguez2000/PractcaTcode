@@ -36,8 +36,8 @@ class Home extends BaseController
     public function mostrarRegistros(){
         $mFacturas = new mFacturas();
         $todos = $mFacturas->findAll();
-        $usuarios=array('usuarios'=>$todos);
-        return view("vRegistros", $usuarios);
+        $facturas=array('facturas'=>$todos);
+        return view("vRegistros", $facturas);
     }
 
     
