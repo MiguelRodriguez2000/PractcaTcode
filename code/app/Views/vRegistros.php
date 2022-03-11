@@ -16,6 +16,7 @@
 					<th>Cantidad de articulo</th>
 					<th>Precio unitario del articulo</th>
 					<th>Subtotal por articulos</th>
+					<th>Acciones</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -27,8 +28,7 @@
 					 <td><?php echo $usuario['cantidad']; ?></td>
 					 <td><?php echo $usuario['precio_u']; ?></td>
 					 <td><?php echo $usuario['total']; ?></td>
-					 <td><?php echo $usuario['estatus']; ?></td>
-					 <td><a type="button" href="<?php echo base_url(); ?>/proyectoTWII/code/public/Home/eliminarRegistro/<?php echo $usuario['id_factura']; ?>">Eliminar</a></td>
+					 <td><a type="button" href="<?php echo base_url(); ?>practica/PractcaTcode-main/code/public/Home/eliminarRegistro/<?php echo $usuario['id_factura']; ?>">Eliminar</a></td>
 				</tr>
 				<?php }?>
 			</tbody>

@@ -16,7 +16,7 @@
         <h2>La factura se registro con exito,
             su identificador es el:
                 <?php echo$id_factura; ?></h2>
-                hola
+                <a class="text-dark" href="<?php echo base_url();?>practica/PractcaTcode-main/code/public/Home/mostrarRegistros">Home</a>
     </div>
     <footer>
 </footer>
