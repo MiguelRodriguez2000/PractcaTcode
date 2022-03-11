@@ -19,35 +19,29 @@ class Home extends BaseController
         return view('vIngreso');
     }
     public function insertarForm(){
-        $mUsuarios = new mUsuarios();
-        $usuarioNuevo = [
-            "nombre" => $_POST['nombre'],
-            "apellido" => $_POST['apellido'],
-            "correo" => $_POST['correo'],
-            "rol" => $_POST['rol'],
-            "contra" => $_POST['contra']
+        $mFacturas = new mFacturas();
+        $facturaNueva = [
+            "fecha" => $_POST['nombre'],
+            "descripcion" => $_POST['apellido'],
+            "cantidad" => $_POST['correo'],
+            "precio_u" => $_POST['rol'],
+            "total" => <?php $total = $_POST['cantidad'] * $_POST['precio_u']; echo $total; ?>
         ];
-        $mUsuarios->insert($usuarioNuevo);
-        $datoId['id_usuario'] = $mUsuarios->
+        $mFacturas->insert($facturaNueva);
+        $datoId['id_factura'] = $mFacturas->
         db->insertID();
         return view("vSuccess",$datoId );
     }
     public function mostrarRegistros(){
-        $mUsuarios = new mUsuarios();
-        $todos = $mUsuarios->findAll();
+        $mFacturas = new mFacturas();
+        $todos = $mFacturas->findAll();
         $usuarios=array('usuarios'=>$todos);
         return view("vRegistros", $usuarios);
     }
 
-    public function ingresarForm(){
-        $mUsuarios = new mUsuarios();
-        $correo = $_POST['correo'];
-        $contra = $_POST['contra'];
-        $user= $mUsuarios->where('correo', $correo)->where('contra',$contra)->first();
-        return view("vIngresado", $user);
-    }
+    
     public function actualizarRegistro(){
-        $mUsuarios = new mUsuarios();
+        $mFacturas = new mFacturas();
         $id_usuario = $_POST['id_usuario'];
         $usuarioActualizado = [
             "nombre" => $_POST['nombre'],
@@ -56,19 +50,19 @@ class Home extends BaseController
             "rol" => $_POST['rol'],
             "contra" => $_POST['contra']
         ];
-        $mUsuarios->update($id_usuario, $usuarioActualizado);
+        $mFacturas->update($id_usuario, $usuarioActualizado);
         return $this->mostrarRegistros();
     }
     public function buscarRegistro(){
-        $mUsuarios = new mUsuarios();
+        $mFacturas = new mFacturas();
         $id_usuario = $_POST['id_usuario'];
-        $usuario=$mUsuarios->find($id_usuario);
+        $usuario=$mFacturas->find($id_usuario);
         return view("vRegistroEncontrado", $usuario);
     }
     public function eliminarRegistro($id){
-        $mUsuarios = new mUsuarios();
-        $id_usuario = $id;
-        $mUsuarios -> delete($id_usuario);
+        $mFacturas = new mFacturas();
+        $id_factura = $id;
+        $mFacturas -> delete($id_factura);
 
         return $this->mostrarRegistros();
     }

@@ -26,8 +26,6 @@
 		<br>
 		<center>Precio unitario: <input required type="num" name="precio_u" id="precio_u"></center>
 		<br>
-		<center>Subtotal del articulo: <input required type="num" name="cantidad" id="cantidad" Value="precio_u * cantidad"	 readonly></center>
-		<br>
 		<center><input type="submit" name="enviar" value="Registrar"></center>
 	</form>
 	</div>
