@@ -18,18 +18,15 @@
 	<h3><center>Ingrese correctamente sus datos</center></h3>
 	<form method="POST" action="../Home/insertarForm">
 		<div>	
-		<center>Nombre: <input required type="text" name="nombre" id="nombre"></center>
+		<center>Fecha de la compra: <input required type="date" name="fecha" id="fecha"></center>
 		<br>
-		<center>Apellido: <input required type="text" name="apellido" id="apellido"></center>
+		<center>Descripciòn del articulo: <input required type="text" name="descripcion" id="descripcion"></center>
 		<br>
-		<center>Correo: <input required type="text" name="correo" id="correo"></center>
+		<center>Cantidad de articulo: <input required type="num" name="cantidad" id="cantidad"></center>
 		<br>
-		<center>Rol: <select name="rol" id="rol" >
-        <option value="0">Lector</option>
-        <option value="1">Escritor de reseñas</option>
-        <option value="2">Critico</option>
-    </select></center><br>
-		<center>Contraseña: <input required type="text" name="contra" id="contra"></center>
+		<center>Precio unitario: <input required type="num" name="precio_u" id="precio_u"></center>
+		<br>
+		<center>Subtotal del articulo: <input required type="num" name="cantidad" id="cantidad" Value="precio_u * cantidad"	 readonly></center>
 		<br>
 		<center><input type="submit" name="enviar" value="Registrar"></center>
 	</form>

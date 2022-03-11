@@ -11,26 +11,24 @@
 			<thead>
 				<tr>
 					<th>ID</th>
-					<th>Correo</th>
-					<th>Contraseña</th>
-					<th>Nombre</th>
-					<th>Apellido</th>
-					<th>Rol</th>
-					<th>Estatus</th>
-					<th>Acciones</th>
+					<th>Fecha de compra</th>
+					<th>Descripciòn del articulo</th>
+					<th>Cantidad de articulo</th>
+					<th>Precio unitario del articulo</th>
+					<th>Subtotal por articulos</th>
 				</tr>
 			</thead>
 			<tbody>
 				<?php foreach($usuarios as $usuario){?>
 				<tr>
-					 <td><?php echo $usuario['id_usuario']; ?></td>
-					 <td><?php echo $usuario['correo']; ?></td>
-					 <td><?php echo $usuario['contra']; ?></td>
-					 <td><?php echo $usuario['nombre']; ?></td>
-					 <td><?php echo $usuario['apellido']; ?></td>
-					 <td><?php echo $usuario['rol']; ?></td>
+					 <td><?php echo $usuario['id_factura']; ?></td>
+					 <td><?php echo $usuario['fecha_compra']; ?></td>
+					 <td><?php echo $usuario['descripcion']; ?></td>
+					 <td><?php echo $usuario['cantidad']; ?></td>
+					 <td><?php echo $usuario['precio_u']; ?></td>
+					 <td><?php echo $usuario['total']; ?></td>
 					 <td><?php echo $usuario['estatus']; ?></td>
-					 <td><a type="button" href="<?php echo base_url(); ?>/proyectoTWII/code/public/Home/eliminarRegistro/<?php echo $usuario['id_usuario']; ?>">Eliminar</a></td>
+					 <td><a type="button" href="<?php echo base_url(); ?>/proyectoTWII/code/public/Home/eliminarRegistro/<?php echo $usuario['id_factura']; ?>">Eliminar</a></td>
 				</tr>
 				<?php }?>
 			</tbody>
