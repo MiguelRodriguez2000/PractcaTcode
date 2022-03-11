@@ -22,9 +22,9 @@
 		<br>
 		<center>Descripciòn del articulo: <input required type="text" name="descripcion" id="descripcion"></center>
 		<br>
-		<center>Cantidad de articulo: <input required type="num" name="cantidad" id="cantidad"></center>
+		<center>Cantidad de articulo: <input required type="number" name="cantidad" id="cantidad"></center>
 		<br>
-		<center>Precio unitario: <input required type="num" name="precio_u" id="precio_u"></center>
+		<center>Precio unitario: <input required type="number" name="precio_u" id="precio_u"></center>
 		<br>
 		<center><input type="submit" name="enviar" value="Registrar"></center>
 	</form>
