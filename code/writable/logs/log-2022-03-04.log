@@ -1,0 +1,19 @@
+CRITICAL - 2022-03-04 00:03:08 --> Cannot redeclare App\Controllers\Home::actualizarRegistro()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-04 00:03:09 --> Cannot redeclare App\Controllers\Home::actualizarRegistro()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-04 00:03:16 --> Cannot redeclare App\Controllers\Home::actualizarRegistro()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-04 00:05:12 --> Cannot redeclare App\Controllers\Home::actualizarRegistro()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-04 00:14:28 --> Undefined array key "id_usuario"
+#0 C:\xampp\htdocs\proyectoTWII\code\app\Controllers\Home.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(825): App\Controllers\Home->actualizarRegistro()
+#2 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\proyectoTWII\code\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

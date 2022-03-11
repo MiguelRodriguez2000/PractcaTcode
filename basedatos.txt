@@ -5,4 +5,4 @@ CREATE TABLE facturas(
     cantidad int not null,
     precio_u double not null,
     total double not null
-)
+);

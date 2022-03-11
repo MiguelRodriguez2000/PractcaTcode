@@ -1,0 +1,72 @@
+CRITICAL - 2022-03-08 18:30:49 --> syntax error, unexpected token "|", expecting end of file
+#0 C:\xampp\htdocs\proyectoTWII\code\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Home/Ingreso')
+#1 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Home/Ingreso')
+#2 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\proyectoTWII\code\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-08 18:31:11 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\proyectoTWII\code\app\Controllers\Home.php on line 47
+#0 C:\xampp\htdocs\proyectoTWII\code\app\Controllers\Home.php(47): view('vIngresado', NULL)
+#1 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(825): App\Controllers\Home->ingresarForm()
+#2 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\proyectoTWII\code\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-08 18:36:25 --> Undefined variable $id_usuario
+#0 C:\xampp\htdocs\proyectoTWII\code\app\Views\vRegistros.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\proyectoTWII\code\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyectoTWII\code\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyectoTWII\code\system\Common.php(1089): CodeIgniter\View\View->render('vRegistros', Array, true)
+#4 C:\xampp\htdocs\proyectoTWII\code\app\Controllers\Home.php(39): view('vRegistros', Array)
+#5 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(825): App\Controllers\Home->mostrarRegistros()
+#6 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoTWII\code\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-08 18:37:50 --> Undefined array key "$id_usuario"
+#0 C:\xampp\htdocs\proyectoTWII\code\app\Views\vRegistros.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\proyectoTWII\code\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyectoTWII\code\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyectoTWII\code\system\Common.php(1089): CodeIgniter\View\View->render('vRegistros', Array, true)
+#4 C:\xampp\htdocs\proyectoTWII\code\app\Controllers\Home.php(39): view('vRegistros', Array)
+#5 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(825): App\Controllers\Home->mostrarRegistros()
+#6 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoTWII\code\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-08 18:38:37 --> Undefined array key "$id_usuario"
+#0 C:\xampp\htdocs\proyectoTWII\code\app\Views\vRegistros.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\proyectoTWII\code\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyectoTWII\code\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyectoTWII\code\system\Common.php(1089): CodeIgniter\View\View->render('vRegistros', Array, true)
+#4 C:\xampp\htdocs\proyectoTWII\code\app\Controllers\Home.php(39): view('vRegistros', Array)
+#5 C:\xampp\htdocs\proyectoTWII\code\app\Controllers\Home.php(60): App\Controllers\Home->mostrarRegistros()
+#6 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(825): App\Controllers\Home->actualizarRegistro()
+#7 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTWII\code\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-08 18:39:27 --> Undefined array key "$id_usuario"
+#0 C:\xampp\htdocs\proyectoTWII\code\app\Views\vRegistros.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\proyectoTWII\code\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyectoTWII\code\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyectoTWII\code\system\Common.php(1089): CodeIgniter\View\View->render('vRegistros', Array, true)
+#4 C:\xampp\htdocs\proyectoTWII\code\app\Controllers\Home.php(39): view('vRegistros', Array)
+#5 C:\xampp\htdocs\proyectoTWII\code\app\Controllers\Home.php(60): App\Controllers\Home->mostrarRegistros()
+#6 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(825): App\Controllers\Home->actualizarRegistro()
+#7 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTWII\code\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-08 18:39:49 --> Undefined array key "$id_usuario"
+#0 C:\xampp\htdocs\proyectoTWII\code\app\Views\vRegistros.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\proyectoTWII\code\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyectoTWII\code\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyectoTWII\code\system\Common.php(1089): CodeIgniter\View\View->render('vRegistros', Array, true)
+#4 C:\xampp\htdocs\proyectoTWII\code\app\Controllers\Home.php(39): view('vRegistros', Array)
+#5 C:\xampp\htdocs\proyectoTWII\code\app\Controllers\Home.php(60): App\Controllers\Home->mostrarRegistros()
+#6 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(825): App\Controllers\Home->actualizarRegistro()
+#7 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTWII\code\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTWII\code\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

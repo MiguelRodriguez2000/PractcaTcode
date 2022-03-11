@@ -1,0 +1,8 @@
+CREATE TABLE facturas(
+    id_factura int AUTO_INCREMENT PRIMARY KEY,
+    fecha_compra date not null,
+    descripcion varchar(100) not null,
+    cantidad int not null,
+    precio_u double not null,
+    total double not null
+)
