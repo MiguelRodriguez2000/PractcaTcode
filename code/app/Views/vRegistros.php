@@ -23,7 +23,7 @@
 				<?php foreach($facturas as $factura){?>
 				<tr>
 					 <td><?php echo $factura['id_factura']; ?></td>
-					 <td><?php echo $factura['fecha_compra']; ?></td>
+					 <td><?php echo $factura['fecha']; ?></td>
 					 <td><?php echo $factura['descripcion']; ?></td>
 					 <td><?php echo $factura['cantidad']; ?></td>
 					 <td><?php echo $factura['precio_u']; ?></td>
@@ -43,7 +43,7 @@
 	<br>
 	<div class="text-center text-dark p-3" style="background-color: rgba(0,0,0,0.2);">
 		<i class="bi bi-badge-cc"></i> 2022:
-		<a class="text-dark" href="<?php echo base_url();?>/proyectoTWII/code/public/Home/bienvenida">Home</a>
+		<a class="text-dark" href="<?php echo base_url();?>/proyectoTWII/code/public/Home/registro">Registrar nueva Factura</a>
 	</div>
 </footer>
 </html>
