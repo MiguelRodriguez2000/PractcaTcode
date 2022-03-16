@@ -10,7 +10,7 @@ class Home extends BaseController
     }
     public function bienvenida()
     {
-        return view('vbienvenida');
+        return view('vBienvenida');
     }
     public function registro(){
         return view('vRegistro');
@@ -43,22 +43,23 @@ class Home extends BaseController
     
     public function actualizarRegistro(){
         $mFacturas = new mFacturas();
-        $id_usuario = $_POST['id_usuario'];
-        $usuarioActualizado = [
-            "nombre" => $_POST['nombre'],
-            "apellido" => $_POST['apellido'],
-            "correo" => $_POST['correo'],
-            "rol" => $_POST['rol'],
-            "contra" => $_POST['contra']
+        $id_factura = $_POST['id_factura'];
+        $facturaActualizado = [
+            "fecha" => $_POST['fecha'],
+            "descripcion" => $_POST['descripcion'],
+            "cantidad" => $_POST['cantidad'],
+            "precio_u" => $_POST['precio_u'],
+            $total = $_POST['cantidad'] * $_POST['precio_u'],
+            "total" =>  $total
         ];
-        $mFacturas->update($id_usuario, $usuarioActualizado);
+        $mFacturas->update($id_factura, $facturaActualizado);
         return $this->mostrarRegistros();
     }
-    public function buscarRegistro(){
+    public function buscarRegistro($id){
         $mFacturas = new mFacturas();
-        $id_usuario = $_POST['id_usuario'];
-        $usuario=$mFacturas->find($id_usuario);
-        return view("vRegistroEncontrado", $usuario);
+        $id_factura = $id;
+        $factura=$mFacturas->find($id_factura);
+        return view("vRegistroEncontrado", $factura);
     }
     public function eliminarRegistro($id){
         $mFacturas = new mFacturas();
@@ -68,3 +69,4 @@ class Home extends BaseController
         return $this->mostrarRegistros();
     }
 }
+

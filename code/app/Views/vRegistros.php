@@ -28,12 +28,10 @@
 					 <td><?php echo $factura['cantidad']; ?></td>
 					 <td><?php echo $factura['precio_u']; ?></td>
 					 <td><?php echo $factura['total']; ?></td>
-					 <td><a type="button" href="<?php echo base_url(); ?>/practica/PractcaTcode-main/code/public/Home/eliminarRegistro/
-					 <?php echo $usuario['id_factura']; ?>">Eliminar</a><a type="button" href="<?php echo base_url(); ?>
-					 /practica/PractcaTcode-main/code/public/Home/buscarRegistro/<?php echo $usuario['id_factura']; ?>">Editar</a>
+					 <td><a type="button" href="<?php echo base_url();?>/practica/PractcaTcode-main/code/public/Home/eliminarRegistro/
+					 <?php echo $factura['id_factura'];?>">Eliminar</a><a type="button" href="<?php echo base_url();?>/practica/PractcaTcode-main/code/public/Home/buscarRegistro/<?php echo $factura['id_factura'];?>">Editar</a>
 					</td>
 				</tr>
-				<?php }?>
 			</tbody>
 		</table>
 	</div>
@@ -43,7 +41,7 @@
 	<br>
 	<div class="text-center text-dark p-3" style="background-color: rgba(0,0,0,0.2);">
 		<i class="bi bi-badge-cc"></i> 2022:
-		<a class="text-dark" href="<?php echo base_url();?>/proyectoTWII/code/public/Home/registro">Registrar nueva Factura</a>
+		<a class="text-dark" href="<?php echo base_url();?>/practica/PractcaTcode-main/code/public/Home/registro">Registrar nueva Factura</a>
 	</div>
 </footer>
 </html>

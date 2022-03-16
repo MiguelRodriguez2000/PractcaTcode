@@ -14,26 +14,19 @@
 <body>
 	<br><br><br>
 	<h1><center>Registro encontrado</center></h1>
-	<form method="POST" action="../Home/actualizarRegistro">
+	<form method="POST" action="../actualizarRegistro">
 		<div>	
 		<center>ID: <input required type="text" name="id_factura" id="id_factura" value="<?php echo $id_factura; ?>" readonly></center>
 		<br>
-		<center>fecha: <input required type="date" name="fecha" id="fecha" value="<?php echo $fecha; ?>"></center>
+		<center>Fecha de la compra: <input required type="date" name="fecha" id="fecha" value="<?php echo $fecha ?>"></center>
 		<br>
-		<center>Descripciòn del articulo: <input required type="text" name="descripcion" id="descripcion" value="<?php echo $descripcion; ?>"></center>
+		<center>Descripciòn del articulo: <input required type="text" name="descripcion" id="descripcion" value="<?php echo $descripcion ?>"></center>
 		<br>
-		<center>Correo: <input required type="text" name="correo" id="correo" value="<?php echo $correo; ?>"></center>
+		<center>Cantidad de articulo: <input required type="number" name="cantidad" id="cantidad" value="<?php echo $cantidad ?>"></center>
 		<br>
-		<center>Rol: <select name="rol" id="rol" value="<?php echo $rol; ?>">
-        <option value="0">Lector</option>
-        <option value="1">Escritor de reseñas</option>
-        <option value="2">Critico</option>
-    </select></center><br>
-		<center>Contraseña: <input required type="text" name="contra" id="contra" value="<?php echo $contra; ?>"></center>
+		<center>Precio unitario: <input required type="number" name="precio_u" id="precio_u" value="<?php echo $cantidad ?>"></center>
 		<br>
-		<center>Estatus: <input required type="text" name="estatus" id="estatus" value="<?php echo $estatus; ?>" readonly></center>
-		<br>
-		<center><input type="submit" name="Actualizar" value="Actualizar"></center>
+		<center><input type="submit" name="enviar" value="Registrar"></center>
 	</form>
 	</div>
 	<br/><br/>
